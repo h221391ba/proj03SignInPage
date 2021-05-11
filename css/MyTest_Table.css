@@ -1,0 +1,158 @@
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* text-align:center; */
+    }
+
+.bigImg {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: 
+        url(../img/pancake2-1.jpg) center center fixed no-repeat;
+    background-size:100%;
+    background-size: cover;
+    min-height: 100%;
+    filter: blur(10px);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    background-color: blueviolet;
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.signIn {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    width: 40vw;
+    height: 80vh;
+}
+
+.signUpEnter {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* background-color: rgb(153, 125, 180); */
+    position: absolute;
+    right: 0;
+    width: 40vw;
+    height: 80vh;
+    background-size:100%;
+    min-height: 100%;
+    background: 
+        url(../img/pancake2-1.jpg)no-repeat center fixed;
+    background-size: cover;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);   
+}
+
+.signUpIntro {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.signUpIntro h1 {
+    color: white;
+    font-family: "SimSun";
+    font-size: 40px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 25px 0px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.line {
+    background-color: white;
+    border-radius: 50px;
+    width: 15vw;
+    height: 0.5vh;
+    border: 1px solid white;
+    z-index: 5;
+    margin: 25px 0px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.signUpPoint {
+    color: #FFE18F;
+    font-family: "SimSun";
+    font-size: 25px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 25px 0px;
+    text-shadow: 2px 2px 10px black;
+}
+
+#signUpBut {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: white;
+    font-size: 30px;
+    font-family: "SimSun";
+    border: 3px solid white;
+    border-radius: 100px;
+    width: 200px;
+    height: 60px;
+    margin: 20px 0px;
+    text-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+    transition: 1s;
+}
+
+#signUpBut:hover {
+    background-color: #f2ba52;
+}
+
+#signUpBut:active {
+    text-shadow: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signInLine {
+    background-color: #f2ba52;
+    border-radius: 50px;
+    width: 5vw;
+    height: 0.5vh;
+    border: 1px solid #f2ba52;
+    z-index: 5;
+    margin: 25px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.signIn h1 {
+    color: #3B6D8C;
+    font-family: "SimSun";
+    font-size: 40px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 25px 0px;
+}
