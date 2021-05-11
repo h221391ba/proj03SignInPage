@@ -19,7 +19,10 @@
                 <h1>會員登入</h1>
                 <div class="signInLine"></div>
                 <div class="signInAcount">
-                <h2>或是用e-mail登入</h2>
+                    <img src="../img/google-plus.svg" alt="google" width="40">
+                    <img src="../img/facebook.svg" alt="facebook" width="40">
+                </div>
+                <h2 class="signInPoint">或是用e-mail登入</h2>
                 <form id="sinInForm" action="#" method="get">
                     <fieldset class="emailFiel">
                         <legend>e-mail</legend>
@@ -30,12 +33,15 @@
                         <input type="password" name="password" id="password">
                     </fieldset>
                 </form>
-                <div>
-                    <input type="checkbox" name="acctMemory" value="yes" id="acctMemory">記住我
-                    <h3>忘記密碼?</h3>
+                <div id="signInCheck">
+                    <div class="acctMemory">
+                    <input type="checkbox" name="acctMemory" value="yes" id="acctMemory">
+                    <label>記住我</label>
+                    </div>
+                    <h3 id="forgetPsw">忘記密碼?</h3>
                 </div>
                 <button type="button" id="signInBut">登&nbsp入</button>
-                </div>
+                
 
             </div>
             <div class="signUpEnter">
