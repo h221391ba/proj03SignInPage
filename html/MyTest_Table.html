@@ -10,7 +10,7 @@
     <meta name="date" content="2021/05/07">
     <link href="../css/ress.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/MyTest_Table.css" rel="stylesheet" type="text/css" media="all">
-    <!-- <script type="text/javascript" src="../javascript/HW01.js" defer></script> -->
+    <script type="text/javascript" src="../js/MyTest_Table.js" defer></script>
 </head>
 <body>
     <div class="bigImg"></div>
@@ -19,28 +19,33 @@
                 <h1>會員登入</h1>
                 <div class="signInLine"></div>
                 <div class="signInAcount">
-                    <img src="../img/google-plus.svg" alt="google" width="40">
-                    <img src="../img/facebook.svg" alt="facebook" width="40">
+                    <a href="">
+                        <img src="../img/google-plus.svg" alt="google" width="40">
+                    </a>
+                    <a href=""> 
+                        <img src="../img/facebook.svg" alt="facebook" width="40">
+                    </a>
                 </div>
                 <h2 class="signInPoint">或是用e-mail登入</h2>
-                <form id="sinInForm" action="#" method="get">
-                    <fieldset class="emailFiel">
-                        <legend>e-mail</legend>
-                        <input type="email" name="e-mail" id="email">
+                <form id="sinInForm" action="#" method="get" autocomplete="off">
+                    <fieldset class="emailFiel" id="emailFiel">
+                        <legend id="emailLeg">e-mail</legend>
+                        <input type="email" name="e-mail" id="email" required >
                     </fieldset>
-                    <fieldset class="pswFiel">
-                        <legend>password</legend>
-                        <input type="password" name="password" id="password">
+                    <fieldset class="pswFiel" id="pswFiel">
+                        <legend id="pswLeg">password</legend>
+                        <input type="password" name="password" id="password" required>
                     </fieldset>
-                </form>
-                <div id="signInCheck">
-                    <div class="acctMemory">
-                    <input type="checkbox" name="acctMemory" value="yes" id="acctMemory">
-                    <label>記住我</label>
+                    <div id="signInCheck">
+                        <div class="acctMemory">
+                        <input type="checkbox" name="acctMemory" value="yes" id="acctMemory">
+                        <label style="color: #3B6D8C;font-weight: bold;">記住我</label>
+                        </div>
+                        <h3 id="forgetPsw">忘記密碼?</h3>
                     </div>
-                    <h3 id="forgetPsw">忘記密碼?</h3>
-                </div>
-                <button type="button" id="signInBut">登&nbsp入</button>
+                    <button type="submit" value="signin" id="signInBut">登&nbsp入</button>
+                </form>
+                
                 
 
             </div>
