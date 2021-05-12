@@ -24,7 +24,7 @@ body {
     bottom: 0;
     margin: auto;
     border-radius: 20px;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
     width: 80vw;
     height: 80vh;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
