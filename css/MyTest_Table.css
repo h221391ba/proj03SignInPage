@@ -270,3 +270,38 @@ a {
     text-shadow: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset;
 }
+
+/* =======fa-eye control============ */
+
+
+/* .fa-eye:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/eye.png);
+    z-index: 99;
+}
+
+.fa-eye-slash:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/invisible.png);
+    z-index: 99;
+    
+} */
+
+/* #togglePassword {
+    background-image: url(../img/invisible.svg);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    float: right;
+    cursor: pointer;
+} */
+
+#faEye {
+    cursor: pointer;
+    margin-right: 5px;
+    z-index: 100;
+}
