@@ -1,5 +1,135 @@
 input {
-    width: 300px;
-    height: 25px;
+    /* width: 300px;
+    height: 25px; */
     border: 2px solid black;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+.bigImg {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: 
+        url(../img/coffee1.png) center bottom fixed no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    filter: blur(10px);
+}
+
+.contaner {
+    background: 
+        url(../img/coffee1.png) center bottom fixed no-repeat;
+        background-size: cover;
+        min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    width: 40vw;
+    height: 50vh;
+}
+
+.title h1 {
+    margin: 0px 50px;
+    font-size: 60px;
+}
+
+.line {
+    background-color: white;
+    margin-left: 0px;
+    border: 3px solid white;
+    border-radius: 50px;
+    width: 30vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+
+.title p {
+    margin: 20px 80px;
+    font-size: 22px;
+    font-family: 'simsun';
+}
+
+.signUp {
+    margin: 0px 50px;
+    margin-right: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 33vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sinUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nmStl {
+    background-color: salmon;
+    width: 33vw;
+    height: 120px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#fstNmFiel, #lstmiel, #emlFiel, #pswFiel, #pswCheckFiel {
+    height: 55px;
+    padding: 2px 10px;
+    border: 1px solid #afafaf;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+ 
+
+#fstNm, #lstNm {
+    height: 25px;
+    width: 9vw;
+
+}
+
+#eml, #psw, #pswCheck {
+    height: 25px;
+    width: 20vw;
+}
+
+#nmErAlt, #emlErAlt, #pswErAlt, #pswCheckErAlt {
+    margin: 5px auto;
+    background-color: royalblue;
+    height: 25px;
+    width: 20vw;
 }

@@ -15,24 +15,51 @@
     <script type="text/javascript" src="../js/signUp.js" defer></script>
 </head>
 <body>
-    <div>
-        <h1></h1>
-        <div></div>
-        <p></p>
-    </div>
-    <div>
-        <form id="sinInForm" action="#" method="get" autocomplete="off">
-            <div>
-                <h2></h2>
-                <input type="text">
-                <input type="text">
-                <p></p>
-            </div>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button type="submit">註&nbsp冊</button>
-        </form>
-    </div>
+    <div class="bigImg"></div>
+    <div class="contaner">
+        <div class="title">
+            <h1>kiki's</h1>
+            <div class="line"></div>
+            <p>成為會員可以得到更多優惠及集點服務</p>
+        </div>
+        <div class="signUp">
+            <form id="sinUpForm" action="#" method="get" autocomplete="off">
+                <div class="nmStl">
+                    <div class="name">
+                        <h2></h2>
+                        <fieldset id="fstNmFiel">
+                            <legend>姓</legend>
+                            <input type="text" name="firstName" id="fstNm">
+                        </fieldset>
+                        <fieldset id="lstmiel">
+                            <legend>名</legend>
+                            <input type="text" name="lastName" id="lstNm">
+                        </fieldset>   
+                    </div>
+                    <p id="nmErAlt"></p>
+                </div>
+                <div class="input">
+                    <fieldset id="emlFiel">
+                        <legend>e-mail</legend>
+                        <input type="email" name="e-mail" id="eml" required>
+                    </fieldset>
+                    <p id="emlErAlt"></p>
+                    <fieldset id="pswFiel">  
+                        <legend>密碼</legend>
+                        <input type="password" name="psw" id="psw">
+                    </fieldset>
+                    <p id="pswErAlt"></p>
+                    <fieldset id="pswCheckFiel">
+                        <legend>再次輸入密碼</legend>
+                        <input type="text" name="pswCheck" id="pswCheck">
+                    </fieldset>    
+                    <p id="pswCheckErAlt"></p>    
+                </div>
+                <button type="submit" value="submitSignUp" id="signUpBut">
+                            註&nbsp冊
+                        </button>
+            </form>
+        </div>
+    </div>    
 </body>
 </html>
