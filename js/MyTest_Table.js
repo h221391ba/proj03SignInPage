@@ -1,29 +1,28 @@
-var email = document.getElementById('email');
-var actEle = document.activeElement;
-var emailFiel = document.getElementById('emailFiel');
-var emailLeg = document.getElementById('emailLeg');
-var password = document.getElementById('password');
-var pswLeg = document.getElementById('pswLeg');
-var pswFiel = document.getElementById('pswFiel');
-var faEye = document.getElementById('faEye');
+let email = document.getElementById('email');
+let actEle = document.activeElement;
+let emailFiel = document.getElementById('emailFiel');
+let emailLeg = document.getElementById('emailLeg');
+let password = document.getElementById('password');
+let pswLeg = document.getElementById('pswLeg');
+let pswFiel = document.getElementById('pswFiel');
+let faEye = document.getElementById('faEye');
 
 
-
-function test2 () {
-    var actEle = document.activeElement;
+function test2() {
+    let actEle = document.activeElement;
     if (actEle === email) {
         console.log("email");
         emailFiel.style.border = "2px solid #3B6D8C";
         emailLeg.style.color = "#3B6D8C";
         pswFiel.style.border = "1px solid #afafaf";
         pswLeg.style.color = "#afafaf";
-    }else if (actEle === password){
+    } else if (actEle === password) {
         console.log("password");
         pswFiel.style.border = "2px solid #3B6D8C";
         pswLeg.style.color = "#3B6D8C";
         emailFiel.style.border = "1px solid #afafaf";
         emailLeg.style.color = "#afafaf";
-    }else{
+    } else {
         console.log("reset");
         emailFiel.style.border = "1px solid #afafaf";
         emailLeg.style.color = "#afafaf";
@@ -38,12 +37,12 @@ window.addEventListener('keydown', test2);
 
 // =========================fa-eye control============================
 
-function eyeTgl () {
+function eyeTgl() {
     console.log('123');
-    if ( password.type === 'password') {
+    if (password.type === 'password') {
         password.type = 'text';
         faEye.src = '../img/eye.svg';
-    }else{
+    } else {
         password.type = 'password';
         faEye.src = '../img/invisible.svg';
     }
